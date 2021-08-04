@@ -1,0 +1,9 @@
+.vs
+.vscode
+.idea
+out
+build
+*.pdb
+*.o
+*.a
+imgui.ini
