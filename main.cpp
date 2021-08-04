@@ -20,8 +20,8 @@ gui_main()
 
 		dear::Table("#grid", maxDim, tableFlags) && []() {
 			for (size_t y = 0; y < maxDim; y++) {
-				if (y > 0)
-					ImGui::TableNextRow();
+				ImGui::TableNextRow(ImGuiTableRowFlags_None);
+
 				for (size_t x = 0; x < maxDim; x++) {
 					if (y < 4 && x < 6) {
 						ImGui::TableNextColumn();
